@@ -1,0 +1,69 @@
+
+                            <h1><img src="images/posts.png" alt=""> Forms</h1>
+
+<div class="bloc">
+    <div class="title">Simple inputs<a href="http://www.grafikart.fr/demo/coreadmin/index.php?p=forms#" class="toggle"></a></div>
+    <div class="content">
+        <div class="input">
+            <label for="input1">Text input</label>
+            <input type="text" id="input1">
+            Some informations on how to use this field
+        </div>
+        <div class="input medium error">
+            <label for="input2">Medium input with error</label>
+            <input type="text" id="input2">
+            <span class="error-message">This field can't be empty !</span>
+        </div>
+        <div class="input long">
+            <label for="input3">Loooooooooong input</label>
+            <input type="text" id="input3">
+        </div>
+        <div class="input loading">
+            <label for="input4">Loading</label>
+            <input type="text" id="input4">
+        </div>
+    </div>
+</div>
+<div class="bloc left">
+    <div class="title">Radios and checkbox<a href="http://www.grafikart.fr/demo/coreadmin/index.php?p=forms#" class="toggle"></a></div>
+    <div class="content">
+        <div class="input">
+            <label for="file">Upload a file</label>
+            <div class="uploader" id="uniform-file"><input type="file" id="file" size="20" style="opacity: 0;"><span class="filename">No file selected</span><span class="action">Choose File</span></div>
+        </div>
+
+        <div class="input">
+            <label class="label">Checkboxes</label>
+            <div class="checker" id="uniform-check1"><span class="checked"><input type="checkbox" id="check1" checked="" style="opacity: 0;"></span></div><label for="check1" class="inline">This is a checkbox</label> <br>
+            <div class="checker" id="uniform-check2"><span><input type="checkbox" id="check2" style="opacity: 0;"></span></div><label for="check2" class="inline">Another one !</label> <br>
+        </div>
+        <div class="input">
+            <label class="label">Radio</label>
+            <div class="radio" id="uniform-radio1"><span class="checked"><input type="radio" id="radio1" name="radiobutton" checked="checked" style="opacity: 0;"></span></div><label for="radio1" class="inline">This is a radio input</label> <br>
+            <div class="radio" id="uniform-radio2"><span><input type="radio" id="radio2" name="radiobutton" style="opacity: 0;"></span></div><label for="radio2" class="inline">And this is another radio input</label>
+        </div>
+    </div>
+</div>
+<div class="bloc right">
+    <div class="title">Select and Textarea<a href="http://www.grafikart.fr/demo/coreadmin/index.php?p=forms#" class="toggle"></a></div>
+    <div class="content">
+        <div class="input">
+            <label for="select">This is a "select" input</label>
+            <div class="selector" id="uniform-select"><span>First value</span><select name="select" id="select" style="opacity: 0;">
+                <option value="1">First value</option>
+                <option value="2">Second value</option>
+                <option value="3">Third value</option>
+            </select></div>
+            Some informations on how to use this field
+        </div>
+        <div class="input textarea">
+            <label for="textarea1">Textarea</label>
+            <textarea name="text" id="textarea1" rows="7" cols="4"></textarea>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Enregistrer">
+            <input type="reset" value="Black button" class="black">
+            <input type="reset" value="White button" class="white">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,235 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: 89507
+  Date: 2018/12/4
+  Time: 17:25
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="baidu-site-verification" content="CtYt4injW1" />
+    <meta name="360-site-verification" content="a75dcb147688915b4cc7cfaa71e996a2" />
+    <meta name="keywords" content="个人博客" />
+    <meta name="keywords" content="博客搭建" />
+    <meta name="keywords" content="博客网站" />
+    <link rel="shortcut icon" href="images/logo.png">
+    <meta>
+    <meta charset="utf-8">
+    <meta charset="gb2312">
+    <title>Yan1less的图库</title>
+    <meta name="keywords" content="谈同个人博客♠★♠一个前端设计的热血青年" />
+    <meta name="description" content="谈同个人博客♠★♠一个前端设计的热血青年" />
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/modernizr.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <div class="headtop"></div>
+        <div class="contenttop">
+            <div class="logo f_l">Yan1less的图库</div>
+            <div class="search f_r">
+                <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
+                    <input name="keyboard" id="keyboard" class="input_text" value="请输入关键字" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入关键字'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入关键字'}" type="text">
+                    <input name="show" value="title" type="hidden">
+                    <input name="tempid" value="1" type="hidden">
+                    <input name="tbname" value="news" type="hidden">
+                    <input name="Submit" class="input_submit" value="搜索" type="submit">
+                </form>
+            </div>
+            <div class="blank"></div>
+            <nav>
+                <div  class="navigation">
+                    <ul class="menu">
+                        <li><a href="${pageContext.request.contextPath}/main">网站首页</a></li>
+                        <li><a href="#">关于我</a>
+                            <ul>
+                                <li><a href="${pageContext.request.contextPath}/front/about.html">个人简介</a></li>
+                                <li><a href="${pageContext.request.contextPath}/front/listpic.html">个人相册</a></li>
+                            </ul>
+                        </li>
+                        <%--<li><a href="404.html">我的日记</a>--%>
+                            <%--<ul>--%>
+                                <%--<li><a href="${pageContext.request.contextPath}/front/newslistpic.html">个人日记</a></li>--%>
+                                <%--<li><a href="${pageContext.request.contextPath}/front/newslistpic.html">学习笔记</a></li>--%>
+                            <%--</ul>--%>
+                        <%--</li>--%>
+                        <li><a href="${pageContext.request.contextPath}/login/login.jsp">博主登录</a> </li>
+                        <li><a href="${pageContext.request.contextPath}/front/404.html">给我留言</a> </li>
+                    </ul>
+                </div>
+            </nav>
+            <SCRIPT type=text/javascript>
+                // Navigation Menu
+                $(function() {
+                    $(".menu ul").css({display: "none"}); // Opera Fix
+                    $(".menu li").hover(function(){
+                        $(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown("normal");
+                    },function(){
+                        $(this).find('ul:first').css({visibility: "hidden"});
+                    });
+                });
+            </SCRIPT>
+        </div>
+    </header>
+    <div class="container">
+        <div class="con_content">
+            <div class="about_box">
+                <h2 class="nh1"><span>您现在的位置是：<a href="/" target="_blank">网站首页</a>>><a href="#" target="_blank">个人相册</a></span><b>个人相册</b></h2>
+                <div ><!--class="lispic"-->
+
+                    <style type="text/css">
+                        *{margin:0;padding:0;list-style-type:none;}
+                        a,img{border:0;}
+                        body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+                        /* changeBox_a1 */
+                        .changeBox_a1{position:relative;height:397px;width:732px;overflow:hidden;margin:30px auto;}
+                        .changeBox_imgs{position:relative;height:354px;width:732px;overflow:hidden;clear:both;}
+                        .changeBox_imgs_list{position:absolute;width:9999px;}
+                        .changeBox_imgs_list li{float:left;height:354px;width:732px;}
+                        /* ul_change */
+                        .ul_change,.ul_change .arrow_bar{background:url(images/bannerTag.gif) no-repeat;}
+                        .ul_change{position:relative;width:1000px;height:43px;left:0px;bottom:0px;background-position:0 0;}
+                        .ul_change .arrow_bar{position:absolute;width:181px;height:34px;background-position:-3px -46px;color:#565253;z-index:8;top:3px;left:3px;cursor:pointer;}
+                        .ul_change li{display:block;_display:inline-block;float:left;position:relative;width:181px;height:40px;line-height:40px;padding-top:3px;z-index:9;margin:0 84px 0 3px;text-align:center;color:#8F8F8F;font-size:14px;font-weight:bolder;font-family:'微软雅黑','宋体';cursor:pointer;}
+                    </style>
+
+                    <div id="change_1" class="changeBox_a1">
+                        <div class="changeBox_imgs">
+                            <ul class="changeBox_imgs_list">
+                                <li><a href="/front/Pictures/picutres_life.html" target="_blank"><img width="732" height="354" alt="日常生活" src="images/picture01.jpg" /></a></li>
+                                <li><a href="/front/Pictures/pictures_study.html" target="_blank"><img width="732" height="354" alt="工作学习" src="images/picture02.jpg" /></a></li>
+                                <li><a href="/front/Pictures/pictures_owns.html" target="_blank"><img width="732" height="354" alt="宅图库" src="images/picutre03.jpg" /></a></li>
+                            </ul>
+                        </div>
+                        <ul class="ul_change">
+                            <li id="changeBox_arrow_bar" class="arrow_bar"></li>
+                            <li class="tagLi3" idx="1">日常生活</li>
+                            <li class="tagLi2" idx="2">工作学习</li>
+                            <li class="tagLi1" idx="3">宅图库</li>
+                        </ul>
+                    </div>
+
+                    <script type="text/javascript" src="/front/js/jquery-1.9.1.min.js"></script>
+                    <script type="text/javascript">
+                        function BannerImages(){
+
+                            var b = $("#changeBox_arrow_bar"),
+                                c = $("ul.ul_change li:not(.arrw_bar)"),
+                                e = $("ul.changeBox_imgs_list"),
+                                d = true,
+                                f = 1;
+
+                            var a = function(){
+
+                                var j = (732 * f - 732),j = j == 0 ? 0 : -j,i = 500;
+
+                                e.animate({ left: j + "px" }, i)
+                            };
+
+                            e.find("img").hover(function(){
+                                clearInterval(h)
+                            },function(){
+                                g()
+                            });
+
+                            c.click(function(){
+                                var j = $(this), i = j.position().left + 3;
+                                f = j.attr("idx");
+                                a();
+                                b.animate({ left: i + "px" },500,function(){
+                                    d = true
+                                })
+                            }).mouseover(function(){
+                                if(!d){
+                                    return
+                                }
+                                clearInterval(h);
+                                d = false;
+                                $(this).click()
+                            }).mouseout(function(){
+                                if(!d){
+                                    return
+                                }
+                                g()
+                            });
+
+                            var h = null;
+
+                            var g = function(){
+                                h = setInterval(function(){
+                                    f++;
+                                    if (f > 3){
+                                        f = 1
+                                    }
+                                    c.eq(f).click()
+                                }, 4000)
+                            };
+
+                            g()
+
+                        };
+
+                        $(document).ready(function(){
+                            BannerImages();//Banner滑动效果
+                        });
+                    </script>
+                </div>
+                <!--<div class="pagelist">页次：1/1 每页25 总数10<a href="/">首页</a><a href="/">上一页</a><a href="/">下一页</a><a href="/">尾页</a></div>-->
+
+            </div>
+        </div>
+        <div class="blank"></div>
+        <!-- container代码 结束 -->
+        <div class="comment">
+            <div id="SOHUCS"></div>
+            <script type="text/javascript">
+                (function(){
+                    var appid = 'cytk2a7nr';
+                    var conf = '3437d86f4a4e9bf3aad1ef65fc2740b5';
+                    var width = window.innerWidth || document.documentElement.clientWidth;
+                    if (width < 960) {
+                        window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+
+            <!--PC版-->
+            <div id="SOHUCS" sid="" ></div>
+            <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+            <script type="text/javascript">
+                window.changyan.api.config({
+                    appid: 'cytk2a7nr',
+                    conf: '3437d86f4a4e9bf3aad1ef65fc2740b5'
+                });
+            </script>
+
+            <!--PC和WAP自适应版-->
+            <div id="SOHUCS" sid="请将此处替换为配置SourceID的语句" ></div>
+            <script type="text/javascript">
+                (function(){
+                    var appid = 'cytk2a7nr';
+                    var conf = 'prod_53c868f5f3ac56a10e72d038ac860764';
+                    var width = window.innerWidth || document.documentElement.clientWidth;
+                    if (width < 960) {
+                        window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="f_l">
+                    <p>All Rights Reserved 版权所有：<a href="http://www.tthcclove.cn">谈同个人博客</a> 备案号：陕ICP备17018883号</p>
+                </div>
+                <div class="f_r textr">
+                    <p>QQ：157956315</p>
+                </div>
+            </div>
+        </footer>
+
+
+</body>
+</html>

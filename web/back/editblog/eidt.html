@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>编辑博客</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/jquery.wysiwyg.old-school.css">
+
+    <!-- jQuery AND jQueryUI -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/style2.css">
+    <!--<script type="text/javascript" src="js/index.js"></script>-->
+</head>
+<body>
+<div id="content" class="white">
+    <h1><img src="../images/posts.png" alt="">编辑博客</h1>
+    <div class="bloc">
+        <div class="title"> 操作 <a class="toggle"></a></div>
+        <div class="content dashboard">
+            <div  style="display: block; width: auto;">
+
+                <form action="#" method="post">
+                    <span style="font-size: 30px;font-style: italic">博文名称：</span><input type="text" style="width: 500px;height: 30px;font-size: 28px"><br><br><br><br>
+                    <span style="font-size: 30px;font-style: italic">博文分类：
+                        <div style="width: 80px;display: inline" id="divaa"><input style="width: 26px;height: 26px" type="checkbox" name="tag" value="aa">aa</div>&nbsp;&nbsp;&nbsp;
+                        <div style="width: 80px;display: inline" id="divbb"><input type="checkbox" name="tag" value="bb">bb</div>&nbsp;&nbsp;&nbsp;
+                        <div style="width: 80px;display: inline" id="divcc"><input type="checkbox" name="tag" value="cc">cc</div>&nbsp;&nbsp;&nbsp;</span>
+                    <br><br><br><br>
+                    <span style="font-size: 30px">博文内容：</span><br><br><br>
+                    <!-- 加载编辑器的容器 -->
+                    <script id="container" name="content" type="text/plain" >
+
+                    </script>
+
+
+                    <input  type="submit" value="提交" style="margin-right: 30px; width: 100px;height: 50px;font-size: 14px; float: right">
+                </form>
+                <!-- 配置文件 -->
+                <script type="text/javascript" src="../utf8-jsp/ueditor.config.js"></script>
+                <!-- 编辑器源码文件 -->
+                <script type="text/javascript" src="../utf8-jsp/ueditor.all.js"></script>
+                <!-- 实例化编辑器 -->
+                <script type="text/javascript">
+                    var editor = UE.getEditor('container');
+                </script>
+                <div class="cb"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+
+</body>
+</html>

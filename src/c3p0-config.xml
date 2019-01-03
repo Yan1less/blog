@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <c3p0-config>
 	<default-config>
-		<property name="user">root</property>
-		<property name="password">pxieloveQAQ()</property>
+		<property name="user"></property>
+		<property name="password"></property>
 		<property name="driverClass">com.mysql.jdbc.Driver</property>
-		<property name="jdbcUrl">jdbc:mysql://cdb-fmyiu6q7.gz.tencentcdb.com:10045/blog</property>
+		<property name="jdbcUrl"></property>
 	</default-config> 
 </c3p0-config> 
